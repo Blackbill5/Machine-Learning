@@ -142,7 +142,7 @@ pred_price = scaler.inverse_transform(pred_price)
 st.write("### Predicted price for next day =",pred_price[0,0])
 
 st.markdown("---")
-st.markdown("###Intreactive Graph")
+st.markdown("### Intreactive Graph")
 # Plot the Data using Plotly
 fig = px.line(valid, x=valid.index, y=['Close', 'Predictions'],labels={'index': 'Date', 'value': 'Price'},title='Stock Price Prediction')
 st.plotly_chart(fig)
